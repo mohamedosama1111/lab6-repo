@@ -21,6 +21,11 @@ Feature: Course registration
     When the student registers for "SET312" worth 3 hours
     Then the registration is refused with "already registered"
 
+  Scenario: Drop a registered course
+    Given the student is registered for "SET312" worth 3 hours
+    When the student drops "SET312"
+    Then the student has 0 registered hours
+
   Scenario Outline: Limit check for different loads
     Given the student already has <current> registered hours
     When the student registers for "NEW101" worth <hours> hours

@@ -1,3 +1,6 @@
+MAX_HOURS = 18
+
+
 class RegistrationError(Exception):
     pass
 
@@ -8,6 +11,6 @@ class Student:
         self.total_hours = 0
 
     def register(self, code, hours):
-        if self.total_hours + hours > 18:
+        if self.total_hours + hours > MAX_HOURS:
             raise RegistrationError("credit-hour limit is 18")
         self.total_hours += hours

@@ -1,22 +1,23 @@
-8315db6 chore: lab6 setup (pyproject, gitignore)
-63ecf32 test: rule 1 - register adds hours (RED: no registration module yet)
-ee65dcb feat: rule 1 - minimal Student.register + RegistrationError (GREEN)
-20609c0 test: rule 2 - 18 hour limit (RED)
-8141fdf feat: rule 2 - refuse registration above 18 hours (GREEN)
-f95f3ea refactor: rule 2 - name the MAX_HOURS constant
-05b20d4 test: rule 3 - no duplicate course (RED)
-14c2648 feat: rule 3 - track courses in a dict, refuse duplicates (GREEN)
-0e8540d refactor: rule 3 - total_hours derived from courses; tests still green
-b204ce6 test: rule 4 - drop removes course (RED)
-e820755 feat: rule 4 - Student.drop (GREEN)
-b3c48fc test: A1 - dropping an unregistered course raises error (covers drop error branch)
-38f69b6 feat(bdd): registration.feature (3 scenarios + outline) and steps
-19627a9 test(bdd): B1 - add drop scenario (RED: step undefined)
-f00443f feat(bdd): B1 - add 'student drops' step (GREEN)
-f78ed51 test: C1 - characterization tests pin legacy invoice behaviour (invoice.py = unchanged legacy copy)
-929265a refactor: C step 2 - name the magic numbers
-dd28ff6 refactor: C step 3 - one policy class per fee rule (SRP)
-d4fffe3 refactor: C step 4 - POLICIES lookup replaces if/elif chain (OCP)
-410aac2 refactor: C step 5 - inject file writer, with-statement, print removed (DIP)
-c4a7a94 test: C2 - SiblingPolicy (25% off regular) (RED: KeyError 'sibling')
-b8d2b19 feat: C2 - add SiblingPolicy + one dict entry; make_invoice untouched (GREEN, OCP)
+8315db6 2026-11-21 chore: lab6 setup (pyproject, gitignore)
+63ecf32 2026-11-21 test: rule 1 - register adds hours (RED: no registration module yet)
+ee65dcb 2026-11-21 feat: rule 1 - minimal Student.register + RegistrationError (GREEN)
+20609c0 2026-11-21 test: rule 2 - 18 hour limit (RED)
+8141fdf 2026-11-21 feat: rule 2 - refuse registration above 18 hours (GREEN)
+f95f3ea 2026-11-21 refactor: rule 2 - name the MAX_HOURS constant
+05b20d4 2026-11-21 test: rule 3 - no duplicate course (RED)
+14c2648 2026-11-21 feat: rule 3 - track courses in a dict, refuse duplicates (GREEN)
+0e8540d 2026-11-21 refactor: rule 3 - total_hours derived from courses; tests still green
+b204ce6 2026-11-21 test: rule 4 - drop removes course (RED)
+e820755 2026-11-21 feat: rule 4 - Student.drop (GREEN)
+b3c48fc 2026-11-21 test: A1 - dropping an unregistered course raises error (covers drop error branch)
+38f69b6 2026-11-21 feat(bdd): registration.feature (3 scenarios + outline) and steps
+19627a9 2026-11-21 test(bdd): B1 - add drop scenario (RED: step undefined)
+f00443f 2026-11-21 feat(bdd): B1 - add 'student drops' step (GREEN)
+f78ed51 2026-11-21 test: C1 - characterization tests pin legacy invoice behaviour (invoice.py = unchanged legacy copy)
+929265a 2026-11-21 refactor: C step 2 - name the magic numbers
+dd28ff6 2026-11-21 refactor: C step 3 - one policy class per fee rule (SRP)
+d4fffe3 2026-11-21 refactor: C step 4 - POLICIES lookup replaces if/elif chain (OCP)
+410aac2 2026-11-21 refactor: C step 5 - inject file writer, with-statement, print removed (DIP)
+c4a7a94 2026-11-21 test: C2 - SiblingPolicy (25% off regular) (RED: KeyError 'sibling')
+b8d2b19 2026-11-21 feat: C2 - add SiblingPolicy + one dict entry; make_invoice untouched (GREEN, OCP)
+f2dcb66 2026-11-21 docs: lab6 report, coverage/behave screenshots, smells table, Part D scenarios
